@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />  
     <link rel="stylesheet" href="mediaqueries.css" />
+  
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Mehdi Nouni</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">Skill Set</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">MEhdi Nouni</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -36,18 +37,18 @@
         </div>
       </div>
     </nav>
-    <section id="profile">
+    <section id="profile" class="custom-fade-in">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="./assets/mehdi.png" alt="Mehdi Nouni profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <h1 class="title">Mehdi Nouni</h1>
+        <p class="section__text__p2">Robotics Software Engineer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/PFE_CV.pdf')"
           >
             Download CV
           </button>
@@ -71,17 +72,11 @@
         </div>
       </div>
     </section>
-    <section id="about">
+    <section id="about" class="custom-fade-in">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
+
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -91,7 +86,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <p>2+ years <br />Robotics Software Development</p>
             </div>
             <div class="details-container">
               <img
@@ -100,19 +95,24 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <a href=https://insat.rnu.tn/">National Institute of Applied Science and Technology </a> <br />Engineering Degree in Industrial IT and Automation</p>
             </div>
           </div>
-          <div class="text-container">
+          <div class="intro-text">
+            <h1>Hi!</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              I'm a <strong>software enthusiast</strong> with a strong focus on 
+              <span class="highlight">robotics</span> and <span class="highlight">embedded systems</span>. 
+              Throughout my career, I've primarily worked on the software aspects of these fields, but I've also dabbled in 
+              <span class="highlight">AI applications</span>.
+            </p>
+            <p>
+              I thrive on challenges and am always ready to tackle new projects, even when the field is unfamiliar to me. 
+              My <strong>adaptability</strong> plays a key role in this, allowing me to learn quickly and dive into new 
+              areas—provided it's software-related, of course.
             </p>
           </div>
+          
         </div>
       </div>
       <img
@@ -122,13 +122,13 @@
         onclick="location.href='./#experience'"
       />
     </section>
-    <section id="experience">
+    <section id="experience" class="custom-fade-in">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Skill Set</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Programming Languages</h2>
             <div class="article-container">
               <article>
                 <img
@@ -137,7 +137,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>HTML</h3>
+                  <h3>Python</h3>
                   <p>Experienced</p>
                 </div>
               </article>
@@ -148,58 +148,14 @@
                   class="icon"
                 />
                 <div>
-                  <h3>CSS</h3>
+                  <h3>C++</h3>
                   <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Operating Systems</h2>
             <div class="article-container">
               <article>
                 <img
@@ -208,8 +164,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
+                  <h3>Windows</h3>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -219,7 +175,23 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Node JS</h3>
+                  <h3>Linux</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Familiar Microcontrollers</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>STM32</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -230,7 +202,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Express JS</h3>
+                  <h3>Arduino</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -241,13 +213,88 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Git</h3>
+                  <h3>ESP32</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+        </div>
+        <div class="about-containers">
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">IDE</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Visual Studio Code</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Version Control</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git & GitHub</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Misc Tools and Software</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Grafana</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ROS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MQTT</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
             </div>
           </div>
         </div>
+        
       </div>
       <img
         src="./assets/arrow.png"
@@ -256,7 +303,7 @@
         onclick="location.href='./#projects'"
       />
     </section>
-    <section id="projects">
+    <section id="projects" class="custom-fade-in">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
@@ -264,49 +311,37 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="./assets/armo.jpg"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+            <h2 class="experience-sub-title project-title">Chess Playing Robot Arm</h2>
+            <div class="keywords">
+              <span class="keyword">C++</span>
+              <span class="keyword">Python</span>
+              <span class="keyword">OpenCV</span>
+              <span class="keyword">Reverse Kinematics</span>
+
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/euro.png"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+            <h2 class="experience-sub-title project-title">Autonomous Robot</h2>
+            <div class="keywords">
+              <span class="keyword">C++</span>
+              <span class="keyword">Python</span>
+              <span class="keyword">ROS</span>
+              <span class="keyword">Odometry</span>
+              <span class="keyword">PID</span>
+              <span class="keyword">STM32</span>
+              <span class="keyword">Raspberry PI</span>
             </div>
           </div>
           <div class="details-container color-container">
@@ -342,7 +377,7 @@
         onclick="location.href='./#contact'"
       />
     </section>
-    <section id="contact">
+    <section id="contact" class="custom-fade-in">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
@@ -352,7 +387,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:mehdi.nouni@hotmail.com">mehdi.nouni@hotmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -360,7 +395,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/mehdi-nouni-9a9a2927b/">LinkedIn</a></p>
         </div>
       </div>
     </section>
@@ -375,8 +410,10 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p>Copyright &#169; 2024 Mehdi Nouni. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
+</html>
+
 </html>
