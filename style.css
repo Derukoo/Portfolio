@@ -13,6 +13,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 p {
@@ -97,6 +98,9 @@ a:hover {
   text-underline-offset: 3px;
 }
 
+.a-hyperlink{
+  
+}
 
 .logo {
   font-size: 2rem;
@@ -240,6 +244,12 @@ section {
   font-size: 3rem;
   text-align: center;
 }
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+
 
 #socials-container {
   display: flex;
@@ -358,19 +368,19 @@ section {
 
 /* EXPERIENCE SECTION */
 
-#experience {
+#ssets {
   position: relative;
   height:100%;
 }
 
-.experience-sub-title {
+.ssets-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
-.experience-details-container {
+.ssets-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -408,12 +418,34 @@ article .icon {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
 }
+.project-img-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: center;
 
-.project-img {
+}
+.project-img,.gif{
   border-radius: 2rem;
   width: 90%;
-  height: 90%;
+  height: auto;
 }
+.gif {
+  display: none; /* Hide the GIF by default */
+  max-width: 100%; /* Ensure GIF doesn't overflow container */
+}
+
+.project-img-container:hover .gif {
+  display: block; /* Show the GIF on hover */
+}
+
+.project-img-container:hover .project-img {
+  display: none; /* Hide the static image on hover */
+}
+
+
 
 .project-title {
   margin: 1rem;
@@ -423,6 +455,16 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+.hyperlink-image {
+  width: 30px;
+  height: auto;
+}
+.hyperlink-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 /* CONTACT */
@@ -514,6 +556,7 @@ footer p {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
+  filter: invert(1);
 }
 
 .intro-text h1 {

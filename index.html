@@ -15,7 +15,8 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Skill Set</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#ssets">Skill Set</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -32,6 +33,7 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#ssets" onclick="toggleMenu()">Skill Set</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -41,10 +43,12 @@
       <div class="section__pic-container">
         <img src="./assets/mehdi.png" alt="Mehdi Nouni profile picture" />
       </div>
-      <div class="section__text">
+      <div class="section__text" >
+        <div >
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Mehdi Nouni</h1>
+        <h1   class="title">Mehdi Nouni</h1>
         <p class="section__text__p2">Robotics Software Engineer</p>
+      </div>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -122,18 +126,18 @@
         onclick="location.href='./#experience'"
       />
     </section>
-    <section id="experience" class="custom-fade-in">
+    <section id="ssets" class="custom-fade-in">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skill Set</h1>
-      <div class="experience-details-container">
+      <div class="ssets-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Programming Languages</h2>
+            <h2 class="ssets-sub-title">Programming Languages</h2>
             <div class="article-container">
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="ssets icon"
                   class="icon"
                 />
                 <div>
@@ -144,7 +148,7 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="ssets icon"
                   class="icon"
                 />
                 <div>
@@ -155,7 +159,7 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Operating Systems</h2>
+            <h2 class="ssets-sub-title">Operating Systems</h2>
             <div class="article-container">
               <article>
                 <img
@@ -182,7 +186,7 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Familiar Hardware</h2>
+            <h2 class="ssets-sub-title">Familiar Hardware</h2>
             <div class="article-container">
               <article>
                 <img
@@ -235,7 +239,7 @@
         <div class="about-containers">
 
           <div class="details-container">
-            <h2 class="experience-sub-title">IDE</h2>
+            <h2 class="ssets-sub-title">IDE</h2>
             <div class="article-container">
               <article>
                 <img
@@ -264,7 +268,7 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Version Control</h2>
+            <h2 class="ssets-sub-title">Version Control</h2>
             <div class="article-container">
               <article>
                 <img
@@ -280,7 +284,7 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Misc Tools and Software</h2>
+            <h2 class="ssets-sub-title">Misc Tools and Software</h2>
             <div class="article-container">
 
               <article>
@@ -345,31 +349,38 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/armo.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
+            <div class="project-img-container">
+              <img src="./assets/armo.jpg" alt="Project 1" class="project-img">
+              <img src="./assets/gifs/chess_gif.gif" alt="Animated GIF" class="gif">
             </div>
-            <h2 class="experience-sub-title project-title">Chess Playing Robot Arm</h2>
+            <div class="hyperlink-wrapper">
+              <h2 class="experience-sub-title project-title">Chess Playing Robot Arm</h2>
+              <a class="a-hyperlink" href="https://github.com/Derukoo/Chess-Playing-Robotic-Arm" target="_blank">
+              <img src="./assets/hyperlink.png" class="hyperlink-image"/></a>
+            </div>  
             <div class="keywords">
               <span class="keyword">C++</span>
               <span class="keyword">Python</span>
               <span class="keyword">OpenCV</span>
+              <span class="keyword">Arduino</span>
               <span class="keyword">Reverse Kinematics</span>
-
             </div>
+
+            
           </div>
           <div class="details-container color-container">
-            <div class="article-container">
+            <div class="project-img-container">
               <img
                 src="./assets/euro.png"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Autonomous Robot</h2>
+            <div class="hyperlink-wrapper">
+              <h2 class="experience-sub-title project-title">EUROBOT 2023</h2>
+              <a class="a-hyperlink" href="https://www.eurobot.org/" target="_blank">
+              <img src="./assets/hyperlink.png" class="hyperlink-image"/></a>
+            </div>      
             <div class="keywords">
               <span class="keyword">C++</span>
               <span class="keyword">Python</span>
@@ -382,7 +393,7 @@
             </div>
           </div>
           <div class="details-container color-container">
-            <div class="article-container">
+            <div class="project-img-container">
               <img
                 src="./assets/Mini SUb.jpg"
                 alt="Project 3"
@@ -437,6 +448,8 @@
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
+            
+            <li><a href="#ssets">Skill Set</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
