@@ -243,6 +243,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  color: #4c9ce3;
 }
 .image-container {
   position: relative;
@@ -419,7 +420,10 @@ article .icon {
   background: rgb(250, 250, 250);
 }
 .project-img-container {
-  display: flex;
+  width: 400px; /* Set an explicit width */
+  height: 400px; /* Set an explicit height */
+  position: relative;
+  display: inline-block;
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
@@ -429,22 +433,29 @@ article .icon {
 }
 .project-img,.gif{
   border-radius: 2rem;
-  width: 90%;
+  width: 100%;
   height: auto;
+  position: absolute;
+  opacity: 1; /* Set initial opacity for both images */
+  transition: opacity 0.5s ease-in-out; /* Apply fade effect */
+  z-index: 1; /* Both have the same z-index */
 }
+.project-img {
+  display:block;
+}
+
 .gif {
-  display: none; /* Hide the GIF by default */
-  max-width: 100%; /* Ensure GIF doesn't overflow container */
+  opacity: 0; /* Default state is hidden */
+  z-index: 2; /* Above the static image */
 }
 
 .project-img-container:hover .gif {
-  display: block; /* Show the GIF on hover */
+  opacity: 1; /* Fade in the GIF */
 }
 
 .project-img-container:hover .project-img {
-  display: none; /* Hide the static image on hover */
+  opacity: 0; /* Fade out the static image */
 }
-
 
 
 .project-title {
