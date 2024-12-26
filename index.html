@@ -8,18 +8,47 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    ,
+    :after,
+    *:before {
+      box-sizing: border-box;
+    }
+    img {
+    max-width: 100%;
+    height: auto;
+    }
+
+
+    .section__text {
+      align-self: center;
+      text-align: left;
+
+
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
   <body>
     <nav id="desktop-nav">
-      <div class="logo" style="font-weight: bold;">
-        <span style="color:#4c9ce3;">M</span>  <!-- Space between first and last name -->
+      <div class="logo" style="font-weight: bold">
+        <span style="color: #4c9ce3">M</span>
+        <!-- Space between first and last name -->
         EHDI
-        <span style="color:#4c9ce3; margin-left: 10px;">N</span>
+        <span style="color: #4c9ce3; margin-left: 10px">N</span>
         OUNI
       </div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#ssets">Skill Set</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -27,10 +56,11 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo" style="font-weight: bold;">
-        <span style="color:#4c9ce3;">M</span>  <!-- Space between first and last name -->
+      <div class="logo" style="font-weight: bold">
+        <span style="color: #4c9ce3">M</span>
+        <!-- Space between first and last name -->
         EHDI
-        <span style="color:#4c9ce3; margin-left: 10px;">N</span>
+        <span style="color: #4c9ce3; margin-left: 10px">N</span>
         OUNI
       </div>
       <div class="hamburger-menu">
@@ -49,17 +79,11 @@
       </div>
     </nav>
     <section id="profile" class="custom-fade-in">
-      <div class="section__pic-container">
-        <img src="./assets/mehdi.png" alt="Mehdi Nouni profile picture" />
-      </div>
-      <div class="section__text">
 
-          <h1 >Hello, I'm
-          <span></span></h1>
-          <h1 class="">Mehdi Nouni
-          <span></span></h1>
-          <h1 class="">Robotics Software Engineer
-          <span></span></h1>
+      <div class="section__text">
+        <h1>Hello, I'm <span></span></h1>
+        <h1 class="">Mehdi Nouni <span></span></h1>
+        <h1 class="">Robotics Software Engineer <span></span></h1>
 
         <div class="btn-container">
           <button
@@ -87,6 +111,7 @@
           />
         </div>
       </div>
+
     </section>
 
     <section id="about" class="custom-fade-in">
@@ -146,18 +171,32 @@
       <p class="section__text__p1">Browse My Past</p>
       <h1 class="title">Experience</h1>
 
-        <div class="experience-container">
+      <div class="experience-container">
 
-          <div class="experience-item as2e">
-
-            <div class="icon"><img src="./assets/experiences/1631344924912(1).jpeg"></div>
-            <h2>Embedded Software Engineer</h2>
-            <p>My responsibilities included designing and developing drivers for STM32 microcontrollers,
-               accompanied by a portability layer that enables the drivers to compile across various compilers and frameworks.
-          </div>
-
+        <div class="experience-item as2e" href="https://www.linkedin.com/company/as2e-automation/">
+          <div class="icon"><img src="./assets/experiences/as2e.png" /></div>
+          <h2>Industrial Automation Intern</h2>
+          <p>
+            My responsibilities included developing STM32 drivers with a portability layer, 
+            integrating sensors and actuators for a miniature submarine, 
+            and implementing MQTT for real-time Wi-Fi data transmission via ESP32, visualized in Grafana.
+          </p>
+          <h1>JUNE – SEPTEMBER. 2023</h1>
         </div>
 
+        <div class="experience-item technozor">
+          <div class="icon"><img src="./assets/experiences/technozor.png" /></div>
+          <h2>Embedded Software Engineer</h2>
+          <p>
+            My responsibilities included developing Arduino drivers with a portability layer,
+             integrating sensors and actuators for a miniature submarine,
+              and implementing MQTT for real-time Wi-Fi data transmission via ESP32, visualized in Grafana.
+          </p>
+          <h1>JUNE – SEPTEMBER. 2024</h1>
+        </div>
+        
+      </div>
+      
     </section>
     <section id="ssets" class="custom-fade-in">
       <p class="section__text__p1">Explore My</p>
@@ -396,6 +435,7 @@
                 class="a-hyperlink"
                 href="https://github.com/Derukoo/Chess-Playing-Robotic-Arm"
                 target="_blank"
+                style="display: flex;"
               >
                 <img src="./assets/hyperlink.png" class="hyperlink-image"
               /></a>
@@ -427,6 +467,7 @@
                 class="a-hyperlink"
                 href="https://www.eurobot.org/"
                 target="_blank"
+                style="display: flex;"
               >
                 <img src="./assets/hyperlink.png" class="hyperlink-image"
               /></a>
