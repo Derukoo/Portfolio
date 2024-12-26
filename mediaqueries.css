@@ -21,6 +21,13 @@
   .bottom-nav{
     display:none;
   }
+  .project-img-container:focus-visible .gif {
+    opacity: 1;
+  }
+
+  .project-img-container:focus-visible .project-img {
+    opacity: 0;
+  }
 
 }
 
