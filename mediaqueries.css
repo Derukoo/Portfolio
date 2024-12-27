@@ -14,13 +14,7 @@
   #projects {
     height: fit-content;
   }
-  #footer{
 
-      display:none;
-  }
-  .bottom-nav{
-    display:none;
-  }
   .project-img-container:focus-visible .gif {
     opacity: 1;
   }
